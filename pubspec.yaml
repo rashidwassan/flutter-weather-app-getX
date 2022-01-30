@@ -21,6 +21,7 @@ dependencies:
   intl: ^0.16.0
 
   syncfusion_flutter_charts: ^18.4.46
+  lottie: ^1.2.1
 
 dev_dependencies:
   flutter_test:
@@ -32,6 +33,7 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/anims/
 
   fonts:
     - family: flutterfonts

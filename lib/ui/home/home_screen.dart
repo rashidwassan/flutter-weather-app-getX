@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:intl/intl.dart';
+import 'package:lottie/lottie.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
+import 'package:weather_app/constants/images.dart';
 import '/model/current_weather_data.dart';
 import '/model/five_days_data.dart';
 import '/ui/home/home_controller.dart';
@@ -19,7 +21,11 @@ class HomeScreen extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/images/cloud-in-blue-sky.jpg'),
+                    colorFilter:
+                        ColorFilter.mode(Colors.black38, BlendMode.darken),
+                    image: AssetImage(
+                      'assets/images/cloud-in-blue-sky.jpg',
+                    ),
                     fit: BoxFit.cover,
                   ),
                   borderRadius: BorderRadius.only(
@@ -212,16 +218,11 @@ class HomeScreen extends StatelessWidget {
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
                                               children: <Widget>[
-                                                Container(
-                                                  width: 120,
-                                                  height: 120,
-                                                  decoration: BoxDecoration(
-                                                    image: DecorationImage(
-                                                      image: AssetImage(
-                                                          'assets/images/icon-01.jpg'),
-                                                      fit: BoxFit.cover,
-                                                    ),
-                                                  ),
+                                                SizedBox(
+                                                  width: 130,
+                                                  height: 130,
+                                                  child: LottieBuilder.asset(
+                                                      Images.cloudyMain),
                                                 ),
                                                 Container(
                                                   child: Text(
@@ -344,16 +345,11 @@ class HomeScreen extends StatelessWidget {
                                                     fontFamily: 'flutterfonts',
                                                   ),
                                             ),
-                                            Container(
+                                            SizedBox(
                                               width: 50,
                                               height: 50,
-                                              decoration: BoxDecoration(
-                                                image: DecorationImage(
-                                                  image: AssetImage(
-                                                      'assets/images/icon-01.jpg'),
-                                                  fit: BoxFit.cover,
-                                                ),
-                                              ),
+                                              child: LottieBuilder.asset(
+                                                  Images.cloudyAnim),
                                             ),
                                             Text(
                                               (data != null)
