@@ -6,7 +6,7 @@ import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:weather_app/constants/images.dart';
 import '/model/current_weather_data.dart';
 import '/model/five_days_data.dart';
-import '/ui/home/home_controller.dart';
+import '/pages/home/home_controller.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -219,10 +219,10 @@ class HomeScreen extends StatelessWidget {
                                                   MainAxisAlignment.center,
                                               children: <Widget>[
                                                 SizedBox(
-                                                  width: 130,
-                                                  height: 130,
+                                                  width: 120,
+                                                  height: 120,
                                                   child: LottieBuilder.asset(
-                                                      Images.cloudyMain),
+                                                      Images.cloudyAnim),
                                                 ),
                                                 Container(
                                                   child: Text(

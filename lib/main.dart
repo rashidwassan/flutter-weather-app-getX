@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'ui/home/home_binding.dart';
-import 'ui/home/home_screen.dart';
+import 'pages/home/home_binding.dart';
+import 'pages/home/home_screen.dart';
 
 void main() {
   runApp(WeatherApp());

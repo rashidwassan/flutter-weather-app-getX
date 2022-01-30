@@ -1,5 +1,5 @@
 import 'package:get/instance_manager.dart';
-import '/ui/home/home_controller.dart';
+import '/pages/home/home_controller.dart';
 
 class HomeBinding implements Bindings {
   @override
