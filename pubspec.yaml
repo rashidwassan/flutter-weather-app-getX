@@ -14,13 +14,13 @@ dependencies:
 
   cupertino_icons: ^1.0.0
 
-  get: ^3.26.0
+  get: ^4.6.1
 
-  dio: ^3.0.10
+  dio: ^4.0.4
 
-  intl: ^0.16.0
+  intl: ^0.17.0
 
-  syncfusion_flutter_charts: ^18.4.46
+  syncfusion_flutter_charts: ^19.4.47
   lottie: ^1.2.1
 
 dev_dependencies:
